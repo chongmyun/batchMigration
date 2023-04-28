@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Puncmark>
+
+	<Taglist no = "245" apply="true">
+
+		<Sbcode>a</Sbcode>
+		<Sbcode>b</Sbcode>
+		<Sbcode>h</Sbcode>
+		<Sbcode>x</Sbcode>
+		<Sbcode>d</Sbcode>
+		<Sbcode>n</Sbcode>
+		<Sbcode>p</Sbcode>
+		<Sbcode>e</Sbcode>
+
+	</Taglist>
+
+	<Taglist no = "260" apply="true">
+
+		<Sbcode>a</Sbcode>
+		<Sbcode>b</Sbcode>
+		<Sbcode>c</Sbcode>
+
+	</Taglist>
+
+	<Taglist no = "300" apply="true">
+
+		<Sbcode>a</Sbcode>
+		<Sbcode>b</Sbcode>
+		<Sbcode>c</Sbcode>
+		<Sbcode>e</Sbcode>
+
+	</Taglist>
+
+</Puncmark>

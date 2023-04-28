@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	설명 : Marc에서 Keyword를 추출하는 TAG와 식별기호 정보를 정의하는 레퍼런스 xml 파일이다.
+	
+	<Tagno>		: Tagno 정보
+	<Indicator>	: 식별기호 리스트
+	<Index>		: 색인용 데이터
+-->
+
+<Keyword>
+	<Field><Tagno>110</Tagno><Indicator>$k$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>111</Tagno><Indicator>$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>130</Tagno><Indicator>$a$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>240</Tagno><Indicator>$a$k$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>245</Tagno><Indicator>$a$b$c$p$x</Indicator><Index>N</Index></Field>
+	<Field><Tagno>440</Tagno><Indicator>$a$p$x</Indicator><Index>N</Index></Field>
+	<Field><Tagno>490</Tagno><Indicator>$a$p$x</Indicator><Index>N</Index></Field>
+	<Field><Tagno>500</Tagno><Indicator>$b$c$e$f$g$h$i$j$k$m$r$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>501</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>502</Tagno><Indicator>$c</Indicator><Index>N</Index></Field>
+	<Field><Tagno>503</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>505</Tagno><Indicator>$a$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>507</Tagno><Indicator>$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>510</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>520</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>521</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>533</Tagno><Indicator>$f</Indicator><Index>N</Index></Field>
+	<Field><Tagno>534</Tagno><Indicator>$t$f</Indicator><Index>N</Index></Field>
+	<Field><Tagno>586</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+	<Field><Tagno>600</Tagno><Indicator>$a$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>610</Tagno><Indicator>$a$b$k$p$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>611</Tagno><Indicator>$a$e$p$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>630</Tagno><Indicator>$a$p$k$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>650</Tagno><Indicator>$a$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>651</Tagno><Indicator>$a$x$y$z</Indicator><Index>N</Index></Field>
+	<Field><Tagno>653</Tagno><Indicator>$a</Indicator><Index>Y</Index></Field>
+	<Field><Tagno>700</Tagno><Indicator>$p$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>710</Tagno><Indicator>$p$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>711</Tagno><Indicator>$p$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>730</Tagno><Indicator>$a$k$p$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>740</Tagno><Indicator>$a$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>760</Tagno><Indicator>$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>762</Tagno><Indicator>$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>765</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>767</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>770</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>772</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>773</Tagno><Indicator>$k$p$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>775</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>776</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>777</Tagno><Indicator>$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>780</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>785</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>787</Tagno><Indicator>$k$s$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>830</Tagno><Indicator>$a$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>910</Tagno><Indicator>$k$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>911</Tagno><Indicator>$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>930</Tagno><Indicator>$a$k$p$t</Indicator><Index>N</Index></Field>
+	<Field><Tagno>940</Tagno><Indicator>$a$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>949</Tagno><Indicator>$a$p</Indicator><Index>N</Index></Field>
+	<Field><Tagno>963</Tagno><Indicator>$a</Indicator><Index>N</Index></Field>
+</Keyword>

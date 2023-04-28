@@ -1,0 +1,15 @@
+ÀúÀÚ·¹ÆÛ·±½ºÆÄÀÏ ¿µ¹®À¸·Î º¯°æ
+
+orientbook=µ¿¾ç¼­ÀúÀÚ±âÈ£
+leejaechul1=¸®ÀçÃ¶1Ç¥
+leejaechul2=¸®ÀçÃ¶2Ç¥
+leejaechul3=¸®ÀçÃ¶3Ç¥
+leejaechul4=¸®ÀçÃ¶4Ç¥
+leejaechul5=¸®ÀçÃ¶5Ç¥
+leejaechul6=¸®ÀçÃ¶6Ç¥
+leejaechul7=¸®ÀçÃ¶7Ç¥
+leejaechul8=¸®ÀçÃ¶8Ç¥
+jangilsea=ÀåÀÏ¼¼
+jungpilmo=Á¤ÇÊ¸ð
+cuttersanborn=Ä«ÅÍ¼Àº»
+cuttersanborn2=Ä«ÅÍ¼Àº»2

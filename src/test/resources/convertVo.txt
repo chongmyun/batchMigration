@@ -1,0 +1,29 @@
+SELECT
+    'private' ||
+    (CASE A.DATA_TYPE
+        WHEN 'NUMBER'
+        THEN 'long'
+        WHEN 'TimeStamp'
+        THEN 'LocalDateTime'
+        WHEN 'DATE'
+        THEN 'Date'
+        WHEN 'VARCHAR2'
+        THEN 'String'
+        WHEN 'CHAR'
+        THEN 'String'
+        ELSE ''
+    END
+    ) ||
+    ' '||
+    LOWER(SUBSTR(A.CAMEL_CASE,1,1)) ||
+    SUBSTR(A.CAMEL_CASE,2)||
+    ';' AS RESULT
+    FROM(
+        SELECT
+            COLUMN_NAME,
+            DATA_TYPE,
+            REPLACE(initcap(COLUMN_NAME),'_') AS CAMEL_CASE
+        FROM ALL_TAB_COLUMNS
+        WHERE TABLE_NAME='테이블명'
+        ORDER BY COLUMN_ID
+    ) A;

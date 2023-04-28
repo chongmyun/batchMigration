@@ -1,0 +1,1949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarcSyntax>
+	<Field tagno="001" repeat="N" firstIndicator="" secondIndicator=""/>
+	<Field tagno="003" repeat="N" firstIndicator="" secondIndicator=""/>
+	<Field tagno="005" repeat="N" firstIndicator="" secondIndicator=""/>
+	<Field tagno="006" repeat="Y" firstIndicator="" secondIndicator=""/>
+	<Field tagno="007" repeat="Y" firstIndicator="" secondIndicator=""/>
+	<Field tagno="008" repeat="N" firstIndicator="" secondIndicator=""/>
+	<Field tagno="010" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="012" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="013" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="015" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="016" repeat="Y" firstIndicator="7" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="017" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="018" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="020" repeat="Y" firstIndicator="b,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="022" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="023" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="024" repeat="Y" firstIndicator="0,1,2,3,4,7,8" secondIndicator="b,0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="027" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="028" repeat="Y" firstIndicator="0,1,2,3,4,5,8" secondIndicator="0,1,2,3">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="030" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="032" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="033" repeat="Y" firstIndicator="b,0,1,2" secondIndicator="b,0,1,2">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="034" repeat="Y" firstIndicator="0,1,3" secondIndicator="b,0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="N"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="s" repeat="Y"/>
+		<SubField code="t" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="035" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="036" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="037" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="040" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="041" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="042" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+	</Field>
+	<Field tagno="043" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="044" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="045" repeat="N" firstIndicator="b,0,1,2" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="046" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="047" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="048" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="049" repeat="N" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="l" repeat="Y"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+	</Field>
+	<Field tagno="050" repeat="Y" firstIndicator="b,0,1" secondIndicator="0,4">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="051" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="052" repeat="Y" firstIndicator="0,1,2,3,4" secondIndicator="0,1,2,3,4,5">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="055" repeat="Y" firstIndicator="1,7" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="056" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="060" repeat="Y" firstIndicator="b,0,1" secondIndicator="0,4">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="066" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+	</Field>
+	<Field tagno="070" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="072" repeat="Y" firstIndicator="b" secondIndicator="0,7">
+		<SubField code="a" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="074" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="080" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="082" repeat="Y" firstIndicator="0,1" secondIndicator="b,0,1,4">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="085" repeat="Y" firstIndicator="b,0,1,2,3,4,5" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="086" repeat="Y" firstIndicator="b,0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="088" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="090" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="100" repeat="N" firstIndicator="0,1,3" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="110" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="111" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="130" repeat="N" firstIndicator="b" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="210" repeat="Y" firstIndicator="0,1" secondIndicator="b,0">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="2" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="222" repeat="Y" firstIndicator="b" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="240" repeat="N" firstIndicator="0,1" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="242" repeat="Y" firstIndicator="0,1,2" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="243" repeat="N" firstIndicator="0,1" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="245" repeat="N" firstIndicator="0,1,2" secondIndicator="0,1">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="246" repeat="Y" firstIndicator="0,1,2,3" secondIndicator="b,0,1,2,3,4,5,6,7,8,9">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="247" repeat="Y" firstIndicator="0,1" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="250" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="254" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="255" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="256" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="257" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="260" repeat="Y" firstIndicator="b,2,3" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="263" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="270" repeat="Y" firstIndicator="b,1,2" secondIndicator="b,0,7">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="Y"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="300" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="306" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="307" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="310" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="321" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="340" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="i" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="342" repeat="Y" firstIndicator="0,1" secondIndicator="0,1,2,3,4,5,6,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="N"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="w" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="343" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="351" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="352" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="355" repeat="Y" firstIndicator="0,1,2,3,4,5,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="357" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="362" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="440" repeat="Y" firstIndicator="0,1" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="490" repeat="Y" firstIndicator="0,1" secondIndicator="0,1">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="500" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="501" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="Y"/>
+		<SubField code="t" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="5" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="502" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="504" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="505" repeat="Y" firstIndicator="0,1,2,8" secondIndicator="b,0">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="t" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="506" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="507" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="508" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="510" repeat="Y" firstIndicator="0,1,2,3,4,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="511" repeat="Y" firstIndicator="1,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="513" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="514" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="515" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="516" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="518" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="520" repeat="Y" firstIndicator="b,0,1,2,3,4,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="521" repeat="Y" firstIndicator="b,0,1,2,3,4,8" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="522" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="524" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="525" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="526" repeat="Y" firstIndicator="0,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="530" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="533" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="534" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="535" repeat="Y" firstIndicator="1,2" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="536" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="538" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="540" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="541" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="544" repeat="Y" firstIndicator="b,0,1" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="545" repeat="Y" firstIndicator="b,0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="546" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="547" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="550" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="552" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="N"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="555" repeat="Y" firstIndicator="b,0,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="556" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="561" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="562" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="563" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="565" repeat="Y" firstIndicator="b,0,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="567" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="580" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="581" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="583" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="i" repeat="Y"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="584" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="585" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="586" repeat="Y" firstIndicator="b,8" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="590" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="w" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="600" repeat="Y" firstIndicator="0,1,3" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="610" repeat="Y" firstIndicator="b" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="611" repeat="Y" firstIndicator="b" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="630" repeat="Y" firstIndicator="0,1" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="650" repeat="Y" firstIndicator="b,0,1,2" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="651" repeat="Y" firstIndicator="b" secondIndicator="0,1,2,3,4,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="653" repeat="Y" firstIndicator="b,0,1,2" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="654" repeat="Y" firstIndicator="b,0,1,2" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="655" repeat="Y" firstIndicator="b,0" secondIndicator="7">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="656" repeat="Y" firstIndicator="b" secondIndicator="7">
+		<SubField code="a" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="657" repeat="Y" firstIndicator="b" secondIndicator="7">
+		<SubField code="a" repeat="N"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="658" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="700" repeat="Y" firstIndicator="0,1,3" secondIndicator="b,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="710" repeat="Y" firstIndicator="b" secondIndicator="b,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="711" repeat="Y" firstIndicator="b" secondIndicator="b,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="720" repeat="Y" firstIndicator="b,1,2" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="730" repeat="Y" firstIndicator="b" secondIndicator="0,1,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="740" repeat="Y" firstIndicator="b" secondIndicator="b,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="752" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="753" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="754" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="760" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="762" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="765" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="767" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="770" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="772" repeat="Y" firstIndicator="0,1" secondIndicator="b,0,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="773" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="774" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="775" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="N"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="776" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="777" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="780" repeat="Y" firstIndicator="0,1" secondIndicator="0,1,2,3,4,5,6,7">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+	</Field>
+	<Field tagno="785" repeat="Y" firstIndicator="0,1" secondIndicator="0,1,2,3,4,5,6,7,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="786" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+	</Field>
+	<Field tagno="787" repeat="Y" firstIndicator="0,1" secondIndicator="b,8">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="m" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="N"/>
+		<SubField code="y" repeat="N"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="7" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="800" repeat="Y" firstIndicator="0,1,3,2,b" secondIndicator="">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="810" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="811" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="830" repeat="Y" firstIndicator="b" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="850" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="852" repeat="Y" firstIndicator="b,0,1,2,3,4,5,6,7,8,9" secondIndicator="b,0,1,2">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="g" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="Y"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="s" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="6" repeat="N"/>
+		<SubField code="8" repeat="N"/>
+	</Field>
+	<Field tagno="856" repeat="Y" firstIndicator="b,0,1,2,3,4,7" secondIndicator="b,0,1,2,8">
+		<SubField code="a" repeat="Y"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="Y"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="i" repeat="Y"/>
+		<SubField code="j" repeat="N"/>
+		<SubField code="k" repeat="N"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="N"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="N"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="Y"/>
+		<SubField code="t" repeat="Y"/>
+		<SubField code="u" repeat="Y"/>
+		<SubField code="v" repeat="Y"/>
+		<SubField code="w" repeat="Y"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="y" repeat="Y"/>
+		<SubField code="z" repeat="Y"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="3" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="886" repeat="Y" firstIndicator="0,1,2" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+		<SubField code="a" repeat="Y"/>
+		<SubField code="0" repeat="Y"/>
+	</Field>
+	<Field tagno="887" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="2" repeat="N"/>
+	</Field>
+	<Field tagno="890" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="b" repeat="Y"/>
+		<SubField code="h" repeat="Y"/>
+		<SubField code="r" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+	</Field>
+	<Field tagno="900" repeat="Y" firstIndicator="0,1,3" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="Y"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="j" repeat="Y"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="q" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="910" repeat="Y" firstIndicator="b" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="Y"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="911" repeat="Y" firstIndicator="b" secondIndicator="0,1">
+		<SubField code="a" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+		<SubField code="d" repeat="N"/>
+		<SubField code="e" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="u" repeat="N"/>
+		<SubField code="4" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="930" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="d" repeat="Y"/>
+		<SubField code="f" repeat="N"/>
+		<SubField code="g" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="k" repeat="Y"/>
+		<SubField code="l" repeat="N"/>
+		<SubField code="m" repeat="Y"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="o" repeat="N"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="r" repeat="N"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="t" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="940" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="h" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="5" repeat="N"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="949" repeat="Y" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="n" repeat="Y"/>
+		<SubField code="p" repeat="Y"/>
+		<SubField code="s" repeat="N"/>
+		<SubField code="v" repeat="N"/>
+		<SubField code="x" repeat="Y"/>
+		<SubField code="8" repeat="Y"/>
+	</Field>
+	<Field tagno="950" repeat="Y" firstIndicator="0,1" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+		<SubField code="b" repeat="N"/>
+		<SubField code="c" repeat="N"/>
+	</Field>
+	<Field tagno="980" repeat="N" firstIndicator="b" secondIndicator="b">
+		<SubField code="a" repeat="N"/>
+	</Field>
+</MarcSyntax>

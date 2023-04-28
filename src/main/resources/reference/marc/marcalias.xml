@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   <Note>      : 마크에서 특정 ALIAS를 이용하여 마크의 데이터를 빼오기위한 레퍼런스이다.
+   <Name>      : 마크필드 Alias
+   <Tagno>     : TAG Number
+   <Indicator> : 식별기호(a, d ... ) or 자리수(1 or 1-10 ...)
+-->
+
+<MarcAlias>
+	<MarcAliasItem><Name>FIXED_008</Name> <Tagno>008</Tagno><Indicator></Indicator></MarcAliasItem>
+	<!-- 발행국 코드 15-17 -->
+	<MarcAliasItem><Name>008@15-17</Name> <Tagno>008</Tagno><Indicator>15-17</Indicator></MarcAliasItem>
+	<MarcAliasItem><Name>008@18-21</Name> <Tagno>008</Tagno><Indicator>18-21</Indicator></MarcAliasItem>
+	<MarcAliasItem><Name>008@22</Name>    <Tagno>008</Tagno><Indicator>22</Indicator></MarcAliasItem>
+	<!-- 한국대학부호 -->
+	<MarcAliasItem><Name>008@26-27</Name> <Tagno>008</Tagno><Indicator>26-27</Indicator></MarcAliasItem>
+	<!-- TextLang -->
+	<MarcAliasItem><Name>008@35-37</Name> <Tagno>008</Tagno><Indicator>35-37</Indicator></MarcAliasItem>
+	<!-- 정부기관부호 -->
+	<MarcAliasItem><Name>008@38-39</Name> <Tagno>008</Tagno><Indicator>38-39</Indicator></MarcAliasItem>
+
+	<!-- 연속쪽에서 사용 : 입력일자 -->
+	<MarcAliasItem><Name>008@0-5</Name>   <Tagno>008</Tagno><Indicator>0-5</Indicator></MarcAliasItem>
+	<!-- 연속쪽에서 사용 : 간행상태 -->
+	<MarcAliasItem><Name>008@6</Name>     <Tagno>008</Tagno><Indicator>6</Indicator></MarcAliasItem>
+	<!-- 연속쪽에서 사용 : 창간년도  -->
+	<MarcAliasItem><Name>008@7-10</Name>  <Tagno>008</Tagno><Indicator>7-10</Indicator></MarcAliasItem>
+	<!-- 연속쪽에서 사용 : 폐간년도  -->
+	<MarcAliasItem><Name>008@11-14</Name> <Tagno>008</Tagno><Indicator>11-14</Indicator></MarcAliasItem>
+	<!-- 연속쪽에서 사용 : 간행빈도  -->
+	<MarcAliasItem><Name>008@18</Name>    <Tagno>008</Tagno><Indicator>18</Indicator></MarcAliasItem>
+	<!-- 연속 간행 정규성 -->
+	<MarcAliasItem><Name>008@19</Name>    <Tagno>008</Tagno><Indicator>19</Indicator></MarcAliasItem>
+</MarcAlias>
