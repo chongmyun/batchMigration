@@ -1,7 +1,7 @@
 package com.trans.migration.slima.loan.job;
 
 import com.trans.migration.batch.file.AbstractFlatFileItemReader;
-import com.trans.migration.batch.partition.ParallelPartitioner;
+import com.trans.migration.batch.partition.FilePartitioner;
 import com.trans.migration.batch.util.AllUtils;
 import com.trans.migration.slima.loan.domain.SlimLoan;
 import com.trans.migration.slima.loan.domain.SlimReservation;
@@ -52,11 +52,11 @@ public class LoanCsvJobConfig extends DefaultBatchConfiguration {
 
     @Bean
     public Partitioner loanParallelPartitioner(){
-        return new ParallelPartitioner();
+        return new FilePartitioner();
     }
 
     @Bean
-    public PartitionHandler loanPartitionHandler(@Value("#{jobParameters[GridSize[}") String gridSize, Step loanCsvStep,
+    public PartitionHandler loanPartitionHandler(@Value("#{jobParameters[GridSize]}") String gridSize, Step loanCsvStep,
                                                  TaskExecutor taskExecutor){
         TaskExecutorPartitionHandler taskExecutorPartitionHandler = new TaskExecutorPartitionHandler();
         taskExecutorPartitionHandler.setGridSize(Integer.parseInt(gridSize));
@@ -128,7 +128,7 @@ public class LoanCsvJobConfig extends DefaultBatchConfiguration {
 
     @Bean
     public Partitioner reservationParallelPartitioner(){
-        return new ParallelPartitioner();
+        return new FilePartitioner();
     }
 
     @Bean

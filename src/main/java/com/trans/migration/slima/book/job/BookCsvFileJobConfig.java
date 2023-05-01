@@ -1,12 +1,11 @@
 package com.trans.migration.slima.book.job;
 
 import com.trans.migration.batch.file.AbstractFlatFileItemReader;
-import com.trans.migration.batch.partition.ParallelPartitioner;
+import com.trans.migration.batch.partition.FilePartitioner;
 import com.trans.migration.batch.util.AllUtils;
 import com.trans.migration.slima.book.domain.SlimAppendix;
 import com.trans.migration.slima.book.domain.SlimBook;
 import com.trans.migration.slima.book.domain.SlimSpecies;
-import com.trans.migration.slima.user.domain.SlimUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -58,7 +57,7 @@ public class BookCsvFileJobConfig extends DefaultBatchConfiguration {
      * */
     @Bean
     public Partitioner parallelPartitioner(){
-        return new ParallelPartitioner();
+        return new FilePartitioner();
     }
 
     /**
@@ -158,12 +157,11 @@ public class BookCsvFileJobConfig extends DefaultBatchConfiguration {
      * */
     @Bean
     public Step appendixCsvFileStep(JobRepository jobRepository,PlatformTransactionManager tm,
-                                    FlatFileItemReader<SlimAppendix> appendixCsvFileItemReader,ItemProcessor<SlimAppendix,SlimBook> appendixCsvFileItemProcessor,
+                                    FlatFileItemReader<SlimAppendix> appendixCsvFileItemReader,
                                     JdbcBatchItemWriter<SlimBook> appendixCsvFileItemWriter){
         return new StepBuilder("appendixCsvFileStep",jobRepository)
                 .<SlimAppendix,SlimBook>chunk(10000,tm)
                 .reader(appendixCsvFileItemReader)
-                .processor(appendixCsvFileItemProcessor)
                 .writer(appendixCsvFileItemWriter)
                 .build();
     }
@@ -232,7 +230,7 @@ public class BookCsvFileJobConfig extends DefaultBatchConfiguration {
 
         String names = allUtils.getObjectFieldNames(SlimBook.class,false);
 
-        names = ":"+names.replaceAll(",",":,");
+        names = "ESL_SEQ.NEXTVAL,:"+names.replaceAll(",",":,");
 
         String sql = "insert into slim_book values ("+names+")";
         return new JdbcBatchItemWriterBuilder<SlimBook>()
@@ -247,7 +245,7 @@ public class BookCsvFileJobConfig extends DefaultBatchConfiguration {
     public FlatFileItemReader<SlimAppendix> appendixCsvFileItemReader(@Value("#{stepExecutionContext[index]}") String index,
                                                                     @Value("#{jobParameters['appendixPath']}") String appendixPath){
 
-        String names = allUtils.getObjectFieldNames(SlimAppendix.class,false);
+        String names = "libCode,bookRegNo,regNo,slimSpeciesKey";
         String file = appendixPath.substring(0, appendixPath.lastIndexOf("."));
         String ext = appendixPath.substring(appendixPath.lastIndexOf("."));
         String parallelFile = file+index+ext;
@@ -256,23 +254,9 @@ public class BookCsvFileJobConfig extends DefaultBatchConfiguration {
 
     @Bean
     @StepScope
-    public ItemProcessor<SlimAppendix,SlimBook> appendixCsvFileItemProcessor(){
-
-        return appendix -> {
-            SlimBook slimBook = new SlimBook();
-            slimBook.setSlimSpeciesKey(appendix.getSlimSpeciesKey());
-            slimBook.setRegNo(appendix.getRegNo());
-            slimBook.setBookAppendixFlag("A");
-            slimBook.setLibCode(appendix.getLibCode());
-            return slimBook;
-        };
-    }
-
-    @Bean
-    @StepScope
-    public JdbcBatchItemWriter<SlimBook> appendixCsvFileItemWriter(){
-        String sql = "insert into slim_book(species_key,reg_no,lib_code,book_appendix_flag) values(:speciesKey,:appendixRegNo,:libCode,:appendixFlag)";
-        return new JdbcBatchItemWriterBuilder<SlimBook>()
+    public JdbcBatchItemWriter<SlimAppendix> appendixCsvFileItemWriter(){
+        String sql = "insert into slim_appendix(appendix_key,species_key,book_reg_no,reg_no,lib_code) values(esl_seq.nextval,:slimSpeciesKey,:bookRegNo,:regNo,:libCode)";
+        return new JdbcBatchItemWriterBuilder<SlimAppendix>()
                 .dataSource(getDataSource())
                 .sql(sql)
                 .beanMapped()

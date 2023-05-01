@@ -5,12 +5,14 @@ import lombok.Data;
 @Data
 public class SlimAppendix {
 
-    private long slimSpeciesKey;
-
+    private long appendixKey;
+    private String libCode;
     private String bookRegNo;
     private String regNo;
-
-    private String libCode;
-
+    private long slimSpeciesKey;
     private String bookAppendixFlag;
+
+
+
+
 }

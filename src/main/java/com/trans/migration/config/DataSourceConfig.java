@@ -47,7 +47,9 @@ public class DataSourceConfig {
 
         em.setJpaPropertyMap(jpaPropertyMap);
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.batch.toybatch.jpa");
+        
+        //TODO 스캔범위 변경
+        em.setPackagesToScan("com.trans.migration.slima.user.domain");
         em.setJpaVendorAdapter(vendorAdapter);
         return em;
     }

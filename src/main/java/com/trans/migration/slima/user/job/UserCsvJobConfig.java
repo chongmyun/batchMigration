@@ -1,7 +1,7 @@
 package com.trans.migration.slima.user.job;
 
 import com.trans.migration.batch.file.AbstractFlatFileItemReader;
-import com.trans.migration.batch.partition.ParallelPartitioner;
+import com.trans.migration.batch.partition.FilePartitioner;
 import com.trans.migration.batch.util.AllUtils;
 import com.trans.migration.slima.user.domain.SlimUser;
 import lombok.RequiredArgsConstructor;
@@ -43,26 +43,28 @@ public class UserCsvJobConfig extends DefaultBatchConfiguration {
 
     @Bean
     public Step userCsvPartition(JobRepository jobRepository,Step userCsvStep,
-                                 Partitioner userParallelPartitioner,PartitionHandler userPartitionHandler){
+                                 Partitioner userFilePartitioner,PartitionHandler userFilePartitionHandler){
         return new StepBuilder("userCsvPartition",jobRepository)
-                .partitioner(userCsvStep.getName(),userParallelPartitioner)
-                .partitionHandler(userPartitionHandler)
+                .partitioner(userCsvStep.getName(),userFilePartitioner)
+                .partitionHandler(userFilePartitionHandler)
                 .build();
     }
 
     @Bean
-    public Partitioner userParallelPartitioner(){
-        return new ParallelPartitioner();
+    public Partitioner userFilePartitioner(){
+        return new FilePartitioner();
     }
 
     @Bean
     @StepScope
-    public PartitionHandler userPartitionHandler(@Value("#{jobParameters[GridSize[}") String gridSize, Step userCsvStep,
+    public PartitionHandler userFilePartitionHandler(@Value("#{jobParameters[GridSize[}") String gridSize, Step userCsvStep,
                                                  TaskExecutor taskExecutor){
         TaskExecutorPartitionHandler taskExecutorPartitionHandler = new TaskExecutorPartitionHandler();
         taskExecutorPartitionHandler.setGridSize(Integer.parseInt(gridSize));
         taskExecutorPartitionHandler.setTaskExecutor(taskExecutor);
         taskExecutorPartitionHandler.setStep(userCsvStep);
+
+
 
         try{
             taskExecutorPartitionHandler.afterPropertiesSet();
@@ -89,7 +91,6 @@ public class UserCsvJobConfig extends DefaultBatchConfiguration {
     public FlatFileItemReader<SlimUser> userCsvReader(@Value("#{jobParameters[userPath]}")String userPath,@Value("#{stepExecutionContext[index]}") String index){
 
         String names = allUtils.getObjectFieldNames(SlimUser.class,false);
-        System.out.println(names);
         String ext = userPath.substring(userPath.lastIndexOf("."));
         String filePath = userPath.substring(0,userPath.lastIndexOf("."));
         String parallelFile = filePath+index+ext;

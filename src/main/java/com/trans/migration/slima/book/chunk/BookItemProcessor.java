@@ -1,6 +1,7 @@
 package com.trans.migration.slima.book.chunk;
 
 import com.trans.migration.code.*;
+import com.trans.migration.exception.BookException;
 import com.trans.migration.marc.StringUtil;
 import com.trans.migration.marc.index.service.MarcIndexService;
 import com.trans.migration.marc.marc.struct.MarcStru;
@@ -14,10 +15,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import javax.sql.DataSource;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> {
 
@@ -32,6 +30,8 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
 
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
+    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+
 
     public BookItemProcessor(DataSource dataSource) {
         this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
@@ -40,7 +40,6 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
     @Override
     public BoSpecies process(SlimSpecies item) throws Exception {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
         MarcStru marcStru = new MarcStru();
         Map<String,String> marcResult = new HashMap<>();
@@ -52,12 +51,12 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
 
         BoSpecies boSpecies = new BoSpecies();
         if(marcResult.get("status").equals("SUCCESS") == false ) {
-            boSpecies.setRecKey(item.getSlimSpeciesKey());
-            boSpecies.setErrorMsg("마크 구조변경 실패");
-            return boSpecies;
+            item.setErrorMsg(marcResult.get("statusDescription").toString());
+            throw new BookException(marcResult.get("statusDescription").toString());
         }
 
         List<SlimBook> slimBooks = getSlimBook(item.getSlimSpeciesKey());
+        List<SlimAppendix> slimAppendices = getSlimAppendix(item.getSlimSpeciesKey());
         /*
         * 0. 마크에서 값 추출
         * */
@@ -103,10 +102,6 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
         String accompMat        = marcStructService.getAccomp_mat(marcStru);
         String priceCharacter   = marcStructService.getPrice_character(marcStru);
         String price            = marcStructService.getPrice(marcStru);
-
-        if(slimBooks.size() > 0) {
-
-        }
 
         /*
         * 1. 종정보 입력
@@ -247,8 +242,12 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
         }
 
         int count = 0 ;
+        String errorMsg = "";
+        boolean isError = false;
+        List<SlimBook> errorBooks = new ArrayList<>();
         for (SlimBook slimBook : slimBooks) {
             BoBook boBook = new BoBook();
+            boBook.setRecKey(slimBook.getSlimBookKey());
             boBook.setAcqKey(null); //구입정보에서 어떻게 가져올지 확인
             boBook.setSpeciesKey(item.getSlimSpeciesKey());
             boBook.setAccessionRecKey(null); //원부정보에서 키값
@@ -262,14 +261,17 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
                 boBook.setInputDate(regDate);
                 if(count == 0) boSpecies.setInputDate(regDate);
             }catch(ParseException e){
-                boBook.setRegDate(new Date());
-                boBook.setInputDate(new Date());
-            }
+                isError = true;
+                if(errorMsg.equals("")) errorMsg += "등록일 포멧 오류";
+                else errorMsg += ","+"등록일 포멧 오류";
+            }   
             try{
                 Date shelfDate = formatter.parse(shelfDateStr);
                 boBook.setShelfDate(shelfDate);
             }catch(ParseException e){
-                boBook.setShelfDate(new Date());
+                isError = true;
+                if(errorMsg.equals("")) errorMsg += "배가일 포멧 오류";
+                else errorMsg += ","+"배가일 포멧 오류";
             }
 
             if(count == 0) boBook.setRepresentBookYn("Y");
@@ -280,6 +282,8 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
             if(workingStatus.equals("")){
                 boBook.setWorkingStatus("BOL112N");
             }
+            
+            //TODO 등록번호 변환해서 입력
             String regNo    = slimBook.getRegNo();
             String regCode  = slimBook.getRegCode();
             boBook.setRegNo(regNo); //등록번호 길이 변경해서 입력
@@ -308,7 +312,9 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
                 Date date = formatter.parse(publishDate);
                 boBook.setPublishDate(date);
             }catch(ParseException e){
-                boBook.setPublishDate(new Date());
+                isError = true;
+                if(errorMsg.equals("")) errorMsg += "출판일 포멧 오류";
+                else errorMsg += ","+"출판일 포멧 오류";
             }
 
             if(slimBook.getPage() == null ) boBook.setPage(page);
@@ -324,7 +330,9 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
                 if(slimBook.getPrice() == null )boBook.setPrice(Integer.parseInt(price));
                 else boBook.setPrice(Integer.parseInt(slimBook.getPrice()));
             }catch(NumberFormatException e){
-                boBook.setPrice(999999);
+                isError = true;
+                if(errorMsg.equals("")) errorMsg += "가격 포멧 오류";
+                else errorMsg += ","+"가격 포멧 오류";
             }
 
             if(slimBook.getPriceCharacter() == null )boBook.setPriceCharacter(priceCharacter);
@@ -364,21 +372,50 @@ public class BookItemProcessor implements ItemProcessor<SlimSpecies, BoSpecies> 
             boBook.setFirstWork(null);
             boBook.setWorkno(slimBook.getWorkNo());
 
+            //TODO 부록정보 입력
+            for (SlimAppendix slimAppendix : slimAppendices) {
+                String bookRegNo = slimAppendix.getBookRegNo();
+                if(regNo.equals(bookRegNo)){
+                    BoBook appendix = new BoBook();
+                    appendix.setRecKey(slimAppendix.getAppendixKey());
+                }
+            }
+
             boSpecies.getBoBookList().add(boBook);
             if(count == 0) count++;
+            if(isError == true) {
+                slimBook.setErrorMsg(errorMsg);
+                errorBooks.add(slimBook);
+            }
+        }
+
+
+        if(errorBooks.size() > 0){
+            item.setErrorBooks(errorBooks);
+            throw new BookException("책 데이터변환 오류 발생");
         }
 
         return boSpecies;
     }
 
     private List<SlimBook> getSlimBook(Long speciesKey){
-        String sql = "SELECT * FROM SLIM_BOOK WHERE SPECIES_KEY = :speciesKey ORDER BY REG_NO";
+        String sql = "SELECT * FROM SLIM_BOOK WHERE SLIM_SPECIES_KEY = :speciesKey ORDER BY REG_NO";
         Map<String,Object> params = new HashMap<>();
         params.put("speciesKey",speciesKey);
         BeanPropertyRowMapper<SlimBook> slimBookBeanPropertyRowMapper = BeanPropertyRowMapper.newInstance(SlimBook.class);
         List<SlimBook> slimBooks = namedParameterJdbcTemplate.query(sql, params, slimBookBeanPropertyRowMapper);
 
         return slimBooks;
+    }
+
+    private List<SlimAppendix> getSlimAppendix(Long speciesKey){
+        String sql = "SELECT * FROM SLIM_APPENDIX WHERE SLIM_SPECIES_KEY = :speciesKey ORDER BY REG_NO";
+        Map<String,Object> params = new HashMap<>();
+        params.put("speciesKey",speciesKey);
+        BeanPropertyRowMapper<SlimAppendix> slimBookBeanPropertyRowMapper = BeanPropertyRowMapper.newInstance(SlimAppendix.class);
+        List<SlimAppendix> slimAppendices = namedParameterJdbcTemplate.query(sql, params, slimBookBeanPropertyRowMapper);
+
+        return slimAppendices;
     }
 
     //제어번호 어떻게 넣을지 고민해봐야함

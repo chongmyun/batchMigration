@@ -1,6 +1,10 @@
 package com.trans.migration.slima.book.domain;
 
+import jakarta.annotation.Nullable;
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class SlimSpecies {
@@ -11,4 +15,9 @@ public class SlimSpecies {
 
     private String partitionKey;
 
+    @Nullable
+    private String errorMsg;
+
+    @Nullable
+    private List<SlimBook> errorBooks = new ArrayList<>();
 }

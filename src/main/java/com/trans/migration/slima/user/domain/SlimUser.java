@@ -1,12 +1,16 @@
 package com.trans.migration.slima.user.domain;
 
+import jakarta.annotation.Nullable;
+import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
+@Entity
 public class SlimUser {
 
     public SlimUser(){}
 
+    private long tempUserKey;
     private String userId;
     private String userNo;
     private String userWebId;
@@ -39,8 +43,10 @@ public class SlimUser {
     private String acceptWorker;
     private String privacyDate;
     private String stopDate;
-
     private String partitionKey;
+
+    @Nullable
+    private String errorMsg;
 
 
 }

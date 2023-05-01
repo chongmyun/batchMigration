@@ -6,7 +6,7 @@ import org.springframework.batch.item.ExecutionContext;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ParallelPartitioner implements Partitioner {
+public class FilePartitioner implements Partitioner {
     @Override
     public Map<String, ExecutionContext> partition(int gridSize) {
         Map<String, ExecutionContext> partitionExecutionContext = new HashMap<>(gridSize);

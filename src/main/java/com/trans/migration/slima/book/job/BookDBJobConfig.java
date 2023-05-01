@@ -1,11 +1,15 @@
 package com.trans.migration.slima.book.job;
 
-import com.trans.migration.batch.partition.ParallelPartitioner;
+import com.trans.migration.batch.partition.FilePartitioner;
+import com.trans.migration.exception.BookException;
+import com.trans.migration.slima.book.chunk.BookItemErrorWriter;
 import com.trans.migration.slima.book.chunk.BookItemProcessor;
 import com.trans.migration.slima.book.chunk.BookItemWriter;
 import com.trans.migration.slima.book.domain.BoSpecies;
 import com.trans.migration.slima.book.domain.SlimSpecies;
+import com.trans.migration.slima.book.listener.BookProcessorListener;
 import lombok.RequiredArgsConstructor;
+import org.springframework.batch.core.ItemProcessListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobScope;
@@ -21,6 +25,7 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.JdbcCursorItemReader;
 import org.springframework.batch.item.database.builder.JdbcCursorItemReaderBuilder;
+import org.springframework.batch.item.support.CompositeItemWriter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,13 +36,14 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 import java.sql.Types;
+import java.util.Arrays;
 
 @Configuration
 @RequiredArgsConstructor
 public class BookDBJobConfig extends DefaultBatchConfiguration {
 
     @Value("${chunkSize:5000}")
-    private int chunkSize;
+    private int chunkSize = 10000;
 
     /**
      * 1. 잡생성
@@ -62,7 +68,7 @@ public class BookDBJobConfig extends DefaultBatchConfiguration {
     }
 
     @Bean
-    public Partitioner bookDBPartitioner(){return new ParallelPartitioner(); }
+    public Partitioner bookDBPartitioner(){return new FilePartitioner(); }
 
     @Bean
     @JobScope
@@ -85,13 +91,16 @@ public class BookDBJobConfig extends DefaultBatchConfiguration {
      * */
     @Bean
     public Step bookDBStep(JobRepository jobRepository, DataSourceTransactionManager tm,
-                           JdbcCursorItemReader<SlimSpecies> bookDBItemReader,ItemProcessor<SlimSpecies,BoSpecies> bookDBItemProcessor,
-                           ItemWriter<BoSpecies> bookDBItemWriter){
+                           JdbcCursorItemReader<SlimSpecies> bookDBItemReader, ItemProcessor<SlimSpecies,BoSpecies> bookDBItemProcessor,
+                           ItemWriter<BoSpecies> bookDBItemWriter, ItemProcessListener<SlimSpecies,BoSpecies> bookProcessorListener){
         return new StepBuilder("bookDBStep",jobRepository)
                 .<SlimSpecies, BoSpecies>chunk(chunkSize,tm)
                 .reader(bookDBItemReader)
                 .processor(bookDBItemProcessor)
                 .writer(bookDBItemWriter)
+                .faultTolerant()
+                .skip(BookException.class)
+                .skipLimit(100000)
                 .build();
     }
 
@@ -108,6 +117,7 @@ public class BookDBJobConfig extends DefaultBatchConfiguration {
                 .rowMapper(slimSpeciesRowMapper)
                 .sql("SELECT * FROM SLIM_SPECIES WHERE PARTITION_KEY = ? ORDER BY SLIM_SPECIES_KEY")
                 .queryArguments(partition, Types.VARCHAR)
+                .saveState(false)
                 .build();
     }
 
@@ -118,11 +128,27 @@ public class BookDBJobConfig extends DefaultBatchConfiguration {
     }
 
     @Bean
-    @StepScope
-    public ItemWriter<BoSpecies> bookDBItemWriter(DataSource dataSource){
-        return new BookItemWriter(dataSource);
+    public CompositeItemWriter<BoSpecies> bookDBCompositeItemWriter(DataSource dataSource){
+        CompositeItemWriter<BoSpecies> compositeItemWriter = new CompositeItemWriter<>();
+        compositeItemWriter.setDelegates(Arrays.asList(bookDBItemWriter(),bookDBItemErrorWriter()));
+
+        return compositeItemWriter;
     }
 
+    @Bean
+    @StepScope
+    public ItemWriter<BoSpecies> bookDBItemWriter(){
+        return new BookItemWriter(getDataSource());
+    }
+    @Bean
+    @StepScope
+    public ItemWriter<BoSpecies> bookDBItemErrorWriter(){
+        return new BookItemErrorWriter(getDataSource());
+    }
 
+    @Bean
+    public ItemProcessListener<SlimSpecies,BoSpecies> bookProcessorListener(){
+        return new BookProcessorListener();
+    }
 
 }

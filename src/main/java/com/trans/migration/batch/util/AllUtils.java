@@ -1,5 +1,6 @@
 package com.trans.migration.batch.util;
 
+import jakarta.annotation.Nullable;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
@@ -14,18 +15,21 @@ public class AllUtils {
         String names = "";
         Field[] fields = c.getDeclaredFields();
         for (Field field : fields) {
-            if(containKey == true){
-                if (names.equals("")) {
-                    names += field.getName();
-                } else {
-                    names += "," + field.getName();
-                }
-            }else{
-                if(field.getName().equals("partitionKey") == false) {
+            Nullable annotation = field.getAnnotation(Nullable.class);
+            if(annotation == null){
+                if(containKey == true){
                     if (names.equals("")) {
                         names += field.getName();
                     } else {
                         names += "," + field.getName();
+                    }
+                }else{
+                    if(field.getName().equals("partitionKey") == false) {
+                        if (names.equals("")) {
+                            names += field.getName();
+                        } else {
+                            names += "," + field.getName();
+                        }
                     }
                 }
             }

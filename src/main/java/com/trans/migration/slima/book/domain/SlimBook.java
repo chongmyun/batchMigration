@@ -1,10 +1,12 @@
 package com.trans.migration.slima.book.domain;
 
+import jakarta.annotation.Nullable;
 import lombok.Data;
 
 @Data
 public class SlimBook {
-
+    @Nullable
+    private long slimBookKey;
     private long slimSpeciesKey;
     private String regNo;
     private String libCode;
@@ -39,6 +41,10 @@ public class SlimBook {
     private String priceCharacter;
     private String priceOtherInfo;
     private String eaIsbn;
+
+    @Nullable
+    private String errorMsg;
+
 
     public SlimBook() {}
 

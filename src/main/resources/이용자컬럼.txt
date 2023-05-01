@@ -1,0 +1,109 @@
+REC_KEY                                 KEY
+USER_NO                                 대출자번호
+USER_ID                                 대출자ID
+PASSWORD                                비밀번호
+NAME                                    이름
+BIRTHDAY                                생년월일
+BIRTHDAY_TYPE                           + : 양력 / - : 음력
+CIVIL_NO                                미사용/주민등록번호
+EXCHANGE_NO                             내선번호
+DEPARTMENT_NAME                         근무지 부서명
+CLASS_NAME                              근무지 직급명
+HANDPHONE                               핸드폰
+IDX_HANDPHONE                           검색용핸드폰
+E_MAIL                                  E-MAIL
+REG_DATE                                등록일
+REMOVE_DATE                             제적일
+INFERIOR_REASON                         불량회원사유
+MEMBER_CLASS                            회원구분 2:준회원 0:정회원 1:비회원)
+SCHOOL                                  학교
+GRADE                                   학년
+CLASS                                   반
+CLASS_NO                                교번
+MAIL_SEND_AREA                          우편발송지역(H:집, W:근무지)
+LOAN_COUNT                              현재 총대출책수
+RESERVATION_COUNT                       현재 총예약책수
+DELAY_COUNT                             연체횟수
+DELAYDAY_COUNT                          누적연체횟수
+LOAN_STOP_DATE                          대출정지일
+LAST_LOAN_DATE                          최종대출일
+LAST_MODIFY_DATE                        최종정보수정일
+REMARK                                  비고
+REISSUE_CNT                             재발급횟수
+LOAN_STOP_SET_DATE                      대출정지 부여일
+NEW_USER_MAIL_DATE                      신규회원 안내 메일 발송일
+CENTER_UPLOAD_CHECK                     센터업로드상태(Y:성공,N:안함,F:실패)
+SHELF_LOC_CODE                          자료실코드
+USER_PICTURE                            이용자 사진
+USER_PICTURE_TYPE                       이미지 종류(JPG,BMP,..)
+LOST_USER_CARD                          회원증분실여부
+SMS_USE_YN                              문자수신여부
+MONETA_INFORM_PHONE_NUM                 모네타서비스 요청 핸드폰
+MONETA_INFORM_DATE                      모네타서비스 요청일
+CARD_PASSWORD                           회원증 비밀번호
+USER_DEFINE_CODE1                       사용자 정의코드1
+USER_DEFINE_CODE2                       사용자 정의코드2
+USER_DEFINE_CODE3                       사용자 정의코드3
+FIRST_WORK                              최초작업내역
+LAST_WORK                               최종작업내역
+OFFICE                                  근무처
+WORKNO                                  RFID 일련번호
+ARMY_CLASS                              미사용
+MAILING_USE_YN                          메일수신여부
+SECEDE_DATE                             탈퇴일자
+CHECKING                                미사용
+FID_KEY                                 가족아이디 KEY
+H_ADDR1                                 주소(집)
+H_PHONE                                 전화번호(집)
+H_ZIPCODE                               우편번호(집)
+IDX_USER_NAME                           검색용이름
+INFO_VALID_DATE                         미사용
+MANAGE_CODE                             관리구분
+USER_CLASS                              회원구분(0:정상 1:대출정지 2:제적 3:탈퇴)
+USER_CLASS_CODE                         대출직급정보코드
+USER_POSITION_CODE                      대출소속정보코드
+W_ZIPCODE                               우편번호(근무지)
+W_PHONE                                 전화번호(근무지)
+W_ADDR1                                 주소(근무지)
+ILL_EXPIRE_RETURN_CNT                   "복귀만료횟수 이용자가 책두레신청후 책을 대출해가지 않은 횟수 책두레신청제한이 해제되면 0으로 초기화된다."
+ILL_APL_STOP_SET_DATE                   "책두레신청제한설정일 책두레 신청제한일이 설정된 날"
+ILL_APL_STOP_DATE                       상호대차 신청 정지일
+SELF_LOAN_STATION_LIMIT                 무인예약 장비 사용제한 여부
+PB_WORKNO                               독서통장 RFID 시리얼 번호
+REMARK_EDIT_DATE                        비고 변경일
+SECOND_PHONE                            제2 연락처
+KL_REG_DATE                             책이음 회원 가입일
+GPIN_ASCII                              본인인증 ASCII
+GPIN_HASH                               본인인증 DI
+GPIN_SEX                                성별
+KL_MEMBER_YN                            책이임 회원 여부
+CRYPTO_CIVIL_NO                         미사용/암호화된 주민등록번호
+IPIN_HASH                               본인인증 CI
+IPIN_DATE                               본인인증 날짜
+IPIN_RESULT                             본인인증 결과
+CERTIFY_WORKER                          본인인증 처리자
+RENEWAL_DATE                            회원정보 갱신일
+EXPELLED_REASON                         미사용
+PRIVACY_EXPIRE_DATE                     개인정보보유만기일
+PRIVACY_CONFIRM_DATE                    개인정보확인일
+PRIVACY_DESTROY_DATE                    개인정보확인파기예정일
+PRIVACY_CONFIRM_YN                      개인정보확인 필요여부
+KL_SECEDE_DATE                          책이음 회원 탈퇴일
+GROUP_LOAN_USE_ABLE_YN                  전집대출 이용가능여부
+GROUP_LOAN_STOP_DATE                    전집대출 정지일
+ILL_MEMBER_YN                           분산 상호대차 회원여부 - 진해 미사용
+ILL_REG_DATE                            분산 상호대차 회원등록일  - 진해 미사용
+ILL_SECEDE_DATE                         분산 상호대차 회원탈퇴일  - 진해 미사용
+BIRTHDAY_ORDER                          자녀출생순서 1:첫째 2:둘째 3:셋째...
+NUMBER_OF_CHILDREN                      전체자녀수
+INSERT_SMS_YN                           회원가입시 SMS 발송여부- 진해 미사용
+CUMULATIVE_LOAN_COUNT                   미사용
+MEMBER_REG_DATE                         정회원등록일- 진해 미사용
+PREV_USER_CLASS_CODE                    이전 대출직급코드
+SCCCARD_NO                              서울시민카드번호- 진해 미사용
+KL_IMPORT_YN                            미사용
+PASSWORD_Q                              미사용
+PASSWORD_A                              미사용
+PRESERVATION_APL_STOP_DATE              보존서고대출정지일
+PRESERVATION_APL_STOP_SET_DATE          보존서고대출정지부여일
+PRESERVATION_EXPIRE_RETURN_CNT          보존서고미대출건수
